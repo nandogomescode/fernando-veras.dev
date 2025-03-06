@@ -8,9 +8,52 @@
   }
 
 .no-pointer{    
+
   cursor: default;
+
 }
 
 .glb-cursor-pointer{
+
   cursor: pointer;
+
 }
+
+.glb-mono-font{
+
+  color: aliceblue; 
+  width: auto; 
+  font-family: Roboto Mono, monospace;  
+  text-align: justify;
+
+}
+
+.tech-container {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.tech-logo {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  opacity: 0;
+  animation: fade-tech 20s infinite;
+}
+
+/* Ajuste nos tempos para garantir o loop correto */
+.tech-logo:nth-child(1) { animation-delay: 0s; }
+.tech-logo:nth-child(2) { animation-delay: 5s; }
+.tech-logo:nth-child(3) { animation-delay: 10s; }
+.tech-logo:nth-child(4) { animation-delay: 15s; }
+
+/* Correção na animação */
+@keyframes fade-tech {
+  0%, 20% { opacity: 1; }  /* Cada imagem fica visível por 20% do tempo total */
+  25%, 100% { opacity: 0; } /* Transição para a próxima */
+}
+

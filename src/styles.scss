@@ -1,1 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+.no-pointer{    
+
+    cursor: default;
+
+}
+
+.glb-cursor-pointer{
+
+    cursor: pointer;
+
+}
+
+.glb-mono-font{
+
+    color: aliceblue; 
+    width: auto; 
+    font-family: Roboto Mono, monospace;  
+    text-align: justify;
+
+}
